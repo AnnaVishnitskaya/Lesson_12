@@ -1,0 +1,770 @@
+body {
+}
+.wrapper {
+	min-height: 100%;
+	overflow: hidden;
+}
+.header {
+}
+.main {
+}
+.main__container {
+	width: 650px;
+	height: 400px;
+	margin: 100px auto 0px;
+	padding: 4px 0 0 0;
+	border: 1px solid rgba(0, 0, 0, 0);
+	
+}
+/* ------------крыша -------------*/
+.car__roof {
+}
+.roof {
+	height: 11px;
+	width: 260px;
+	border: 2px solid rgba(255, 255, 0, 0);
+	margin-left: 180px;
+}
+.roof__item {
+	width: 97%;
+	height: 290%;
+	border: 2px solid rgb(49, 49, 49);
+	position: relative;
+	transform: translate(5px, 14px);
+	border-radius: 50% 50% 50% 50%;
+	background-color: rgb(129, 123, 123);
+}
+/* --------------стекло------------ */
+.car__top {
+}
+.top-car {
+	height: 95px;
+	border: 2px solid rgba(255, 255, 0, 0);
+}
+[class*="top-car__"] {
+	width: 40px;
+	height: 100%;
+	border: 2px solid rgba(255, 255, 0, 0.014);
+	display: inline-block;
+}
+.top-car__left {
+	margin-left: 100px;
+}
+.left-car-top {
+}
+.left-car-top__item {
+	width: 30%;
+	height: 100%;
+	border: 2px solid rgba(25, 26, 25, 0.565);
+	border-radius: 50%;
+	transform: translate(55px, 10px) skew(-30deg, 30deg);
+	background-color: rgb(129, 123, 123);
+}
+.top-car__glass {
+}
+.glass-car-top {
+	perspective: 85px;
+	width: 320px;
+	height: 100%;
+}
+.glass-car-top__item {
+	width: 283px;
+	height: 90%;
+	position: relative;
+	border: 2px solid rgb(8, 8, 8);
+	border-bottom: 4px solid rgb(163, 158, 158);
+	transform: translate(24px, 8px) rotateX(20deg) rotateY(0deg);
+	background: linear-gradient(90deg, rgba(207, 201, 201, 1) 37%, rgba(80, 79, 79, 1) 100%);
+	box-shadow: 0px -2px 4px 2px rgb(82, 79, 79), -3px 0px rgb(82, 79, 79), 0px 5px rgb(82, 79, 79);
+}
+
+.top-car__right {
+}
+.right-car-top {
+}
+.right-car-top__item {
+	width: 40%;
+	height: 100%;
+	border: 2px solid rgb(68, 70, 68);
+	background-color: rgb(129, 123, 123);
+	box-shadow: inset 2px 2px 5px rgb(44, 44, 44);
+	border-radius: 50%;
+	transform: translate(-18px, 12px) skew(33deg, -30deg);
+	position: relative;
+	z-index: 41;
+}
+
+
+/*------------------------- капот-------------- */
+.car__capot {
+}
+.capot {
+	width: 100%;
+	height: 74px;
+	border: 2px solid rgba(255, 255, 0, 0.008);
+}
+.mirror-side-left {
+	display: inline-block;
+	width: 72px;
+	height: 100%;
+	border: 2px solid rgba(255, 255, 0, 0);
+}
+.mirror-side-left__top {
+	width: 40px;
+	height: 20px;
+	border: 0.5px solid rgba(148, 141, 145, 0.783);
+	background: linear-gradient(0deg, rgba(53, 52, 52, 0.9576719576719577) 68%, rgba(230, 227, 227, 1) 100%);
+	border-radius: 120% 40% 0px 0px;
+	transform: scale(1, 1) translate(90px, -32px);
+}
+.mirror-side-left__middle {
+	width: 40px;
+	height: 5px;
+	border: 1px solid rgb(78, 71, 71);
+	border-bottom: none;
+	background-color: rgb(187, 173, 173);
+	transform: translate(90px, -34px);
+	position: relative;
+	z-index: 2;
+}
+.mirror-side-left__bottom {
+	width: 39px;
+	height: 7px;
+	border: 2px solid rgba(82, 78, 78);
+	background-color: rgb(82, 78, 78);
+	border-radius: 0px 0px 50% 120%;
+	transform: translate(91px, -34px);
+}
+.mirror-side-left__base {
+	width: 13px;
+	height: 20px;
+	border: 2px solid rgb(61, 61, 61);
+	background-color: rgb(78, 76, 76);
+	border-radius: 3px;
+	transform: skew(26deg) translate(142px, -47px);
+	position: relative;
+	z-index: 4;
+}
+.capot__center {
+	display: inline-block;
+	width: 474px;
+	height: 100%;
+	border: 2px solid rgba(255, 255, 0, 0);
+}
+.capot__center::before {
+	content: "";
+	display: block;
+	width: 5px;
+	height: 71px;
+	border: 2px solid rgb(153, 142, 142);
+	border-radius: 50%;
+	position: relative;
+	z-index: 10;
+	transform: skewX(45deg) translate(92px, 0px);
+}
+.capot__center::after {
+	content: "";
+	display: block;
+	width: 5px;
+	height: 70px;
+	border: 2px solid rgb(153, 142, 142);
+	border-radius: 50%;
+	position: relative;
+	transform: skewX(-45deg) translate(188px, -177px);
+}
+
+.capot__item {
+	width: 470px;
+	margin-top: -70px;
+	height: 180px;
+	border: 2px solid rgb(94, 100, 94);
+	border-radius: 36%;
+	transform: scale(1, 1) translate(0px, -15px);
+	background: linear-gradient(0deg, rgba(9, 9, 9, 0.9576719576719577) 68%, rgba(230, 227, 227, 1) 100%);
+	
+}
+.capot__right-side-mirror {
+}
+.mirror-side-right {
+	display: inline-block;
+	width: 50px;
+	height: 100%;
+	border: 2px solid rgba(255, 255, 0, 0);
+}
+.mirror-side-right__top {
+	width: 40px;
+	height: 20px;
+	border: 0.5px solid rgba(148, 141, 145, 0.783);
+	background: linear-gradient(0deg, rgba(53, 52, 52, 0.9576719576719577) 68%, rgba(230, 227, 227, 1) 100%);
+	border-radius: 50% 120% 0px 0px;
+	transform: translate(-65px, -35px);
+}
+.mirror-side-right__middle {
+	width: 40px;
+	height: 5px;
+	border: 1px solid rgb(78, 71, 71);
+	border-bottom: none;
+	background-color: rgb(187, 173, 173);
+	transform: translate(-65px, -38px);
+}
+.mirror-side-right__bottom {
+	width: 39px;
+	height: 7px;
+	border: 2px solid rgba(82, 78, 78);
+	background-color: rgb(82, 78, 78);
+	border-radius: 0px 0px 120% 50%;
+	transform: translate(-65px, -39px);
+}
+.mirror-side-right__base {
+	width: 13px;
+	height: 22px;
+	border: 2px solid rgb(61, 61, 61);
+	background-color: rgb(78, 76, 76);
+	border-radius: 3px;
+	transform: skew(-26deg) translate(-92px, -50px);
+	position: relative;
+	z-index: 0;
+}
+
+/* ----------------перед-------------------- */
+.car__front {
+}
+.front {
+	margin-left: 78px;
+	width: 474px;
+	height: 50px;
+	border: 2px solid rgba(0, 0, 255, 0);
+}
+.front__left {
+	display: inline-block;
+	
+}
+.left-front {
+}
+.left-front__headlight {
+	width: 100px;
+	height: 50px;
+	border: 2px solid rgba(255, 255, 0, 0);
+}
+.headlight-front-left {
+}
+.headlight-front-left__1 {
+	width: 87px;
+	height: 12px;
+	border-top: 3px solid rgb(18, 18, 19);
+	background-color: rgb(163, 157, 157);
+	border-radius: 0px 50% 50% 0px;
+	transform: skew(8deg, 15deg) translate(19px, -30px);
+	position: relative;
+}
+.headlight-front-left__2 {
+	width: 80px;
+	height: 18px;
+	border: 3px solid rgb(230, 224, 224);
+	outline: 2px solid rgb(82, 79, 79);
+	background: radial-gradient(
+		circle,
+		rgba(224, 215, 215, 0.9530427832352488) 26%,
+		rgba(47, 49, 47, 0.9694901516563014) 100%
+	);
+	box-shadow: 0px 5px rgb(31, 30, 30), -2px 0px 12px 10px rgb(114, 109, 109);
+	border-radius: 100% 0% 100% 0% / 0% 0% 100% 100%;
+	transform: skew(8deg, 15deg) translate(21px, -30px);
+	position: relative;
+	z-index: 35;
+}
+.headlight-front-left__3 {
+	width: 90px;
+	height: 25px;
+	border-right: 5px solid rgb(235, 233, 229);
+	background: radial-gradient(
+		circle,
+		rgba(72, 69, 69, 0.9530427832352488) 26%,
+		rgba(5, 5, 5, 0.9694901516563014) 100%
+	);
+	border-radius: 10px 0px 0px 10px;
+	transform: skew(-45deg, 8deg) translate(-13px, -35px);
+	position: relative;
+	z-index: 33;
+}
+.headlight-front-left__4 {
+	width: 94px;
+	height: 28px;
+	border: 2px solid rgb(100, 105, 100);
+	box-shadow: -3px 0px 12px 0px rgb(173, 166, 166);
+	background: linear-gradient(90deg, rgba(207, 201, 201, 1) 37%, rgba(120, 116, 116, 1) 100%);
+	border-radius: 0px 0px 50% 0px;
+	transform: skew(-5deg, 8deg) translate(3px, -45px);
+	position: relative;
+	z-index: 34;
+}
+.headlight-front-left__4::before{
+	content: '';
+	display: block;
+	width: 4px;
+	height: 4px;
+	border: 1px solid rgb(104, 100, 100);
+	border-radius: 50%;
+	transform: skew(15deg,0deg) translate(10px, 17px);
+}
+
+.headlight-front-left__4::after{
+	content: '';
+	display: block;
+	width: 15px;
+	height: 16px;
+	border: 1px solid rgb(104, 100, 100);
+	border-radius: 4px;
+	transform: skew(15deg,0deg) translate(25px, 0px);
+}
+.headlight-front-left__5 {
+	width: 75px;
+	height: 10px;
+	border: 2px solid rgb(151, 149, 149);
+	border-right: 4px solid rgb(105, 103, 103);
+	background-color: rgb(32, 32, 32);
+	box-shadow: -3px 0 0 0 rgb(189, 186, 186), inset -2px 2px rgb(27, 27, 27);
+	border-radius: 0px 50% 50% 0px;
+	transform: skew(-5deg, 15deg) translate(10px, -40px);
+	position: relative;
+	z-index: 37;
+}
+.headlight-front-left__6 {
+	width: 85px;
+	height: 12px;
+	border: 2px solid rgb(151, 149, 149);
+	background-color: rgb(235, 229, 229);
+	box-shadow: 4px 5px 5px 5px black;
+	border-radius: 3px 50% 50% 0px;
+	transform: skew(-5deg, 15deg) translate(1px, -49px);
+	position: relative;
+	z-index: 36;
+}
+
+.headlight-front-left__7 {
+	width: 30px;
+	height: 75px;
+	border-radius: 0px 0px 0px 10px;
+	border: 2px solid black;
+	background-color: rgba(15, 15, 15);
+	transform: skew(0deg, -25deg) translate(-1px, -77px);
+	position: relative;
+	z-index: 11;
+}
+.headlight-front-left__8 {
+}
+/*------------- Лого---------------- */
+.circles {
+	width: 80px;
+	height: 34px;
+	border: 2px solid rgba(172, 255, 47, 0);
+	border-radius: 40%;
+	position: relative;
+	z-index: 40;
+	transform: translate(283px, 7px);
+	background-color: rgb(41, 40, 40);
+}
+.circles__container {
+}
+/* Контейнер Лого */
+.circles__1 {
+	width: 25px;
+	height: 25px;
+	border: 3px solid rgb(217, 221, 210);
+	border-radius: 50%;
+	transform: translate(0px, 2px);
+	outline: 2px solid black;
+	position: relative;
+	z-index: 20;
+}
+.circles__2 {
+	width: 25px;
+	height: 25px;
+	border: 2px solid rgb(217, 221, 210);
+	border-radius: 50%;
+	outline: 2px solid black;
+	position: relative;
+	transform: translate(17px, -22px);
+	z-index: 21;
+}
+.circles__3 {
+	width: 25px;
+	height: 25px;
+	border: 2px solid rgb(217, 221, 210);
+	border-radius: 50%;
+	outline: 2px solid black;
+	position: relative;
+	transform: translate(34px, -47px);
+	z-index: 22;
+}
+
+.circles__4 {
+	width: 25px;
+	height: 25px;
+	border: 2px solid rgb(217, 221, 210);
+	border-radius: 50%;
+	outline: 2px solid black;
+	position: relative;
+	transform: translate(51px, -72px);
+	z-index: 23;
+}
+/* центр переда Решетка */
+.front__center {
+	display: inline-block;
+}
+.center-front__lattice {
+	width: 260px;
+	height: 50px;
+	border: 2px solid rgba(255, 255, 0, 0);
+}
+.lattice__item-1 {
+	width: 300px;
+	height: 14px;
+	border: 3px solid rgb(169, 167, 172);
+		background-color: rgb(39, 37, 37);
+	transform: translate(-15px, -1px);
+}
+.lattice__item-2 {
+	width: 300px;
+	height: 13px;
+	border: 3px solid rgb(169, 167, 172);
+	background-color: rgb(39, 37, 37);
+	border-top: none;
+	transform: translate(-15px, -1px);
+	position: relative;
+	z-index: 10;
+}
+.lattice__item-3 {
+	width: 255px;
+	height: 15px;
+	border-bottom: 3px solid rgb(169, 167, 172);
+	background-color: rgb(39, 37, 37);
+	transform: translate(2px, -1px);
+	position: relative;
+	z-index: 10;
+}
+
+.lattice__item-4 {
+	width: 243px;
+	height: 13px;
+	border-bottom: 3px solid rgb(169, 167, 172);
+	background-color: rgb(39, 37, 37);
+	transform: translate(8px, 0px);
+	position: relative;
+	z-index: 21;
+}
+.lattice__item-5 {
+	width: 232px;
+	height: 14px;
+	border-bottom: 3px solid rgb(169, 167, 172);
+	background-color: rgb(29, 28, 28);
+
+	transform: translate(14px, -3px);
+	position: relative;
+	z-index: 20;
+}
+.lattice__item-6 {
+	width: 223px;
+	height: 14px;
+	border-bottom: 3px solid rgb(169, 167, 172);
+	background-color: rgb(29, 28, 28);
+	transform: translate(18px, -3px);
+	position: relative;
+	z-index: 6;
+}
+.lattice__item-7 {
+	width: 215px;
+	height: 10px;
+	background: rgb(22, 22, 22);
+	border-bottom: 2px solid rgb(214, 210, 211);
+	transform: translate(22px, -2px);
+	position: relative;
+	z-index: 15;
+}
+
+
+.front-right {
+	display: inline-block;
+	
+}
+
+.right-front {
+}
+.right-front__headlight {
+	width: 100px;
+	height: 50px;
+	border: 2px solid rgba(255, 255, 0, 0);
+}
+.headlight-front-right {
+}
+.headlight-front-right__1 {
+	width: 87px;
+	height: 12px;
+	border-top: 3px solid rgb(18, 18, 19);
+	background-color: rgb(163, 157, 157);
+	border-radius: 50% 0 0 50%;
+	transform: skew(-8deg, -15deg) translate(-9px, -28px);
+	position: relative;
+}
+.headlight-front-right__2 {
+	width: 80px;
+	height: 18px;
+	border: 3px solid rgb(230, 224, 224);
+	outline: 2px solid rgb(82, 79, 79);
+	background: radial-gradient(
+		circle,
+		rgba(224, 215, 215, 0.9530427832352488) 26%,
+		rgba(47, 49, 47, 0.9694901516563014) 100%
+	);
+	box-shadow: 0px 5px rgb(31, 30, 30), 2px 0px 12px 10px rgb(114, 109, 109);
+	border-radius: 89% 11% 54% 46% / 0% 100% 0% 100%;
+	transform: skew(-8deg, -15deg) translate(1px, -26px);
+	position: relative;
+	z-index: 34;
+}
+.headlight-front-right__3 {
+	width: 90px;
+	height: 25px;
+	border-left: 5px solid rgb(235, 233, 229);
+	background: radial-gradient(
+		circle,
+		rgba(72, 69, 69, 0.9530427832352488) 26%,
+		rgba(5, 5, 5, 0.9694901516563014) 100%
+	);
+	border-radius: 0px 10px 10px 0px;
+	transform: skew(47deg, -8deg) translate(29px, -33px);
+	position: relative;
+	z-index: 30;
+}
+.headlight-front-right__4 {
+	width: 94px;
+	height: 28px;
+	border: 2px solid rgb(100, 105, 100);
+	background: linear-gradient(90deg, rgba(120, 116, 116, 1) 37%, rgba(207, 201, 201, 1) 100%);
+	box-shadow: 3px 0px 12px 0px rgb(173, 166, 166);
+	border-radius: 0px 0px 0px 50%;
+	transform: skew(5deg, -8deg) translate(3px, -45px);
+	position: relative;
+	z-index: 31;
+}
+.headlight-front-right__4::before{
+	content: '';
+	display: block;
+	width: 15px;
+	height: 16px;
+	border: 1px solid rgb(78, 76, 76);
+	border-radius: 4px;
+	transform: skew(-15deg,0deg) translate(50px, 4px);
+}
+.headlight-front-right__4::after{
+	content: '';
+	display: block;
+	width: 4px;
+	height: 4px;
+	border: 1px solid rgb(104, 100, 100);
+	border-radius: 50%;
+	transform: skew(15deg,0deg) translate(70px, -1px);
+}
+.headlight-front-right__5 {
+	width: 75px;
+	height: 10px;
+	border: 2px solid rgb(151, 149, 149);
+	border-right: 4px solid rgb(105, 103, 103);
+	background-color: rgb(32, 32, 32);
+	box-shadow: 3px 0 0 0 rgb(189, 186, 186), inset 2px 2px rgb(27, 27, 27);
+	border-radius: 50% 0px 0px 50%;
+	transform: skew(5deg, -15deg) translate(13px, -33px);
+	position: relative;
+	z-index: 39;
+}
+.headlight-front-right__6 {
+	width: 83px;
+	height: 12px;
+	border-radius: 50% 3px 0px 50%;
+	border: 2px solid rgb(151, 149, 149);
+	background-color: rgb(235, 229, 229);
+	box-shadow: 0px 2px 5px 6px black;
+	transform: skew(5deg, -15deg) translate(14px, -45px);
+	position: relative;
+	z-index: 38;
+}
+
+.headlight-front-right__7 {
+	width: 30px;
+	height: 86px;
+	border: 2px solid black;
+	background-color: rgba(15, 15, 15);
+	border-radius: 0px 0px 10px 0px;
+	transform: skew(0deg, 25deg) translate(70px, -122px);
+	position: relative;
+	z-index: 12;
+}
+.headlight-front-right__8 {
+}
+
+/* ---------------Низ------------------- */
+.car__bottom {
+}
+.bottom {
+	width: 473px;
+	height: 70px;
+	border: 2px solid rgba(0, 0, 0, 0);
+	margin-left: 80px;
+}
+.bottom__item-1 {
+	width: 409px;
+	height: 43px;
+	border: 5px solid rgb(82, 82, 79);
+	border-top: 10px solid rgb(17, 17, 17);
+	border-bottom: 2px solid rgb(163, 163, 157);
+	transform: translate(29px, 0px);
+	background-color: rgb(29, 28, 28);
+	box-shadow: inset 5px 0px rgb(26, 25, 25), inset -5px 0px rgb(26, 25, 25);
+}
+.bottom__item-2 {
+	width: 50px;
+	height: 70px;
+	border-radius: 50%;
+	border: 2px solid rgb(26, 25, 25);
+	background-color: rgb(16, 15, 15);
+	transform: translate(95px, -70px);
+}
+.bottom__item-3 {
+	width: 50px;
+	height: 70px;
+	border-radius: 50%;
+	border: 2px solid rgb(26, 25, 25);
+	background-color: rgb(16, 15, 15);
+	transform: translate(330px, -140px);
+}
+.bottom__item-4 {
+	width: 5px;
+	height: 70px;
+	border-radius: 50%;
+	border: 2px solid rgb(114, 113, 116);
+	background-color: #fff;
+	transform: skew(-20deg, 0deg) translate(275px, -208px);
+	position: relative;
+	z-index: 25;
+}
+.bottom__item-5 {
+	width: 5px;
+	height: 78px;
+	border-radius: 50%;
+	border: 2px solid rgb(114, 113, 116);
+	background-color: #fff;
+	transform: skew(20deg, 0deg) translate(215px, -288px);
+	position: relative;
+	z-index: 24;
+}
+.bottom__item-6 {
+}
+/* Планка внизу решетки */
+.car__plank {
+	width: 440px;
+	height: 20px;
+	border: 2px solid rgb(128, 120, 120);
+	border-radius: 30%;
+	transform: translate(14px, -25px);
+	margin-left: 80px;
+	background-color: rgb(27, 26, 26);
+	box-shadow: inset 0px 0px 10px rgb(16, 15, 15), 0px -2px 5px rgb(99, 95, 95), 6.5px 0px 0px 0px rgb(61, 60, 60);
+	position: relative;
+	z-index: 13;
+}
+/* -----------------Колеса и дно---------------------- */
+.car__wheels {
+	width: 473px;
+	height: 40px;
+	border: 2px solid rgba(0, 0, 0, 0);
+	margin-left: 80px;
+	margin-top: -20px;
+}
+
+.car__wheel-left {
+}
+.left-wheel {
+	width: 71px;
+	height: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	display: inline-block;
+}
+.left-wheel__item-1 {
+	width: 71px;
+	height: 100%;
+	border-radius: 0 0 15px 18px;
+	border: 2px solid rgb(17, 17, 17);
+	display: inline-block;
+	background-color: rgb(29, 28, 28);
+	box-shadow: inset 0px 0px 10px rgb(16, 15, 15), 0px 0px 5px black;
+}
+.left-wheel__item-2 {
+	width: 20px;
+	height: 100%;
+	border-radius: 0 0 50% 50%;
+	border: 2px solid rgb(17, 17, 17);
+	transform: translate(49px, -35px);
+	background-color: rgb(34, 33, 33);
+	box-shadow: inset 0px 0px 1px 10px rgb(16, 15, 15), 0px 2px 2px 0px black;
+}
+.car__center-bottom {
+}
+.bottom-center-car {
+	width: 320px;
+	height: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	display: inline-block;
+}
+.bottom-center-car__1 {
+}
+.bottom-center-car__item-1 {
+	width: 468px;
+	height: 22px;
+	border-radius: 0 0 10px 5px;
+	border: 2px solid rgb(17, 17, 17);
+	transform: translate(-77px, -16px);
+	background-color: rgb(5, 5, 5);
+	
+}
+.bottom-center-car__2 {
+}
+.bottom-center-car__item-2 {
+	width: 255px;
+	height: 10px;
+	border-radius: 5px;
+	border-bottom: 3px solid rgb(134, 130, 130);
+	border-top: 3px solid rgb(37, 37, 37);
+	outline: 2px solid rgb(17, 17, 17);
+	transform: translate(30px, -20px);
+	background-color: rgb(82, 78, 78);
+	box-shadow: inset 0px 0px 10px rgb(16, 15, 15), 0px 0px 8px rgb(230, 225, 225), 0px 0px 40px 12px black;;
+	position: relative;
+	z-index: 2;
+}
+.car__wheel-right {
+}
+.right-wheel {
+	width: 66px;
+	height: 100%;
+	border: 2px solid rgba(0, 0, 0, 0);
+	display: inline-block;
+}
+.right-wheel__item-1 {
+	width: 67px;
+	height: 100%;
+	border-radius: 0 0 15px 18px;
+	border: 2px solid rgb(17, 17, 17);
+	display: inline-block;
+	transform: translate(-5px, 0px);
+	background-color: rgb(29, 28, 28);
+	box-shadow: inset 0px 0px 10px rgb(16, 15, 15), 0px 2px 5px black;
+}
+.right-wheel__item-2 {
+	width: 20px;
+	height: 100%;
+	border-radius: 0 0 50% 50%;
+	border: 2px solid rgb(17, 17, 17);
+	transform: translate(-5px, -35px);
+	background-color: rgb(34, 33, 33);
+	box-shadow: inset 0px 0px 1px 10px rgb(16, 15, 15), 0px 2px 2px 0px black;
+}
